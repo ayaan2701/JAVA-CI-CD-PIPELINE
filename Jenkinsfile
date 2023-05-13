@@ -30,7 +30,7 @@ pipeline
          {
              script
              {
-                 checkout([$class: 'GitSCM', branches: [[name: '*/development']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/dev1git/maven-web-application.git']]])
+                 checkout([$class: 'GitSCM', branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/ayaan2701/JAVA-CI-CD-PIPELINE.git']]])
                  COMMIT = sh (script: "git rev-parse --short=10 HEAD", returnStdout: true).trim()  
             
                  
