@@ -14,7 +14,7 @@ pipeline
  }
  tools
  {
-      name: 'Maven', type: 'maven'
+      Maven: 'maven'
  }   
 
  options 
