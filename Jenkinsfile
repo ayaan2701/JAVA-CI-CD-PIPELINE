@@ -14,7 +14,7 @@ pipeline
  }
  tools
  {
-      maven 'MAVEN_3.8.4'
+      Maven 'maven'
  }   
 
  options 
