@@ -12,16 +12,14 @@ pipeline
      REPOSITORY_URI = "${AWS_ACCOUNT_ID}.dkr.ecr.${AWS_DEFAULT_REGION}.amazonaws.com/${IMAGE_REPO_NAME}"
      
  }
- tools
- {
-      Maven "maven"
- }   
-
+ tools { 
+     maven 'maven'
+ }
  options 
  {
   buildDiscarder logRotator(artifactDaysToKeepStr: '', artifactNumToKeepStr: '4', daysToKeepStr: '', numToKeepStr: '4')
   timestamps()
-}
+ }
  stages
  {
      stage('Code checkout')
